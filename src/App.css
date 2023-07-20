@@ -1,0 +1,188 @@
+body{
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .row {
+    overflow-x: hidden;
+  }
+}
+
+.navbar{
+  background-color: black;
+    
+  .navbar-brand {
+    margin-left: 20px;
+    
+  }
+  .me-auto{
+    .nav-link {
+      transition: color 0.3s; 
+      padding-left: 20px;
+    }
+      
+    .nav-link:hover {
+      color: #EFA25E !important;
+    }
+  }
+}
+
+.text-header{
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+  position: relative;
+}
+.text-header::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 30px;
+  width: 5px;
+  margin-left: 20px;
+  border-radius: 5px;
+  background: linear-gradient(135deg,red, #9b59b6);
+}
+
+
+
+/* Css của components films*/
+/* .row{
+ background-image: url(https://static.vecteezy.com/system/resources/previews/013/755/473/non_2x/abstract-dark-background-with-line-grid-gradient-color-applicable-website-banner-poster-corporate-social-media-template-billboard-business-sign-video-film-in-channel-backdrop-techno-background-free-vector.jpg);
+} */
+
+.container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  margin: 3em;
+  width: 350px;
+  border: 1px solid white;
+}
+
+
+.title {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+}
+
+.year{
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+.nation {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  margin-bottom: 1px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card.hover {
+  transform: translateY(-20px); /* Nhô lên 5px khi hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Thêm shadow khi hover */
+}
+
+/* button{
+  border: 1px solid  rgb(224, 117, 29);
+  background-color: rgb(224, 117, 29);
+  color: white; 
+  margin-right: 20px;
+  padding: 10px;
+} */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 10ms;
+  visibility: hidden;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: 100px auto;
+  padding: 5px;
+  background: #fff;
+  border-radius: 5px;
+  width: 650px;
+  height:420px;
+  position: relative;
+  transition: all 100s ease-in-out;
+}
+
+.popup .close {
+  position: absolute;
+  right: 10px;
+  transition: all 10ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {color: #06D85F;}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+
+.footer{
+  color: white;
+  padding: 50px;
+  font-size: 20px;
+  background-color: black;
+  opacity: 0.8;
+
+}
+
+#Color-switcher {
+  position: relative;
+  margin-top: 50px;
+  margin-left: 300px;
+  background-color: #413E44;
+  width: 60px;
+  height: 30px;
+  border-radius: 20px;
+}
+
+#Color-switcher-mover {
+  position: absolute;
+  left: 5px;
+  top: 4px;
+  background-color: #fff;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  transition: .6s;
+}
+
+#Color-switcher-moved {
+  position: absolute;
+  background-color: #fff;
+  left: 33px;
+  top: 4px;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  transition: .6s;
+}
